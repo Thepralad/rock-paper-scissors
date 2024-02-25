@@ -1,1 +1,1 @@
-# rock-paper-scissors
+# A simple 🪨🧻✂️ console game in Javascript.
