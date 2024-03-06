@@ -1,0 +1,72 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color: #FBFADA;
+    display: flex;
+    flex-direction: column;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   
+    justify-content: flex-end;
+}
+.header{
+    display: flex;
+    background-color: #ADBC9F;
+    height: 170px;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: #436850;
+}
+
+#button{
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    
+}
+.btn{
+    height: 150px;
+    width: 150px;
+    font-size: 100px;
+    background-color: #ADBC9F;
+    border: 0px;
+    border-radius: 20px;
+}
+.btn:hover{
+    box-shadow: 10px 10px #436850;
+}
+.messages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:60px;
+    font-size: 40px;
+    color:  #436850;;
+}
+.scores{
+    display: flex;
+    gap :50px;
+}
+
+.footer{
+    display: flex;
+    background-color: #436850;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    color:#ADBC9F;
+    height: 50px;
+    margin-top: 70px;
+    
+}
+
+
+
+
