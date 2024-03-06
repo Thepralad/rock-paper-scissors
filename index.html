@@ -5,28 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock-Paper-Scissors</title>
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
+    <div class="header">
         <h1>ROCK PAPER SCISSORS</h1>
     </div>
-    <div>
-        <h3>Choose?</h3>
-    </div>
     <div id="button">
-        <button id="rock">
+        <button id="rock" class="btn">
             ✊🏻
         </button>
-        <button id="paper">
+        <button id="paper" class="btn">
             ✋🏻
         </button>
-        <button id="scissors">
+        <button id="scissors" class="btn">
             ✌🏻
         </button>
     </div>
-    <div>
-        <p id="score">Your score: 0</p>
+    <div class="messages">
+        <div class="scores">
+            <p id="YOU">YOU: 0</p>
+            <p id="CPU">CPU: 0</p>
+        </div>
         <p id="message">CPU chooses NULL</p>
+    </div>
+    <div class="footer">
+        <p>thepralad</p>
+        <a href="https://github.com/Thepralad"><img src="img/github.png" alt=""></a>
     </div>
 
 
