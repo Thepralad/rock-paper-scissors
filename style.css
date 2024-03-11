@@ -22,13 +22,25 @@ body{
     color: #436850;
 }
 
-#button{
+.center{
     display: flex;
-    height: 300px;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    height: 600px;
+    gap: 300px;
     
+}
+#button{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex: 1;
+    margin-left: 200px;
+
+}
+#message{
+    text-align: center;
+    margin-top: 50px;
 }
 .btn{
     height: 150px;
@@ -37,22 +49,29 @@ body{
     background-color: #ADBC9F;
     border: 0px;
     border-radius: 20px;
+    color: #436850;
+    font-weight: bolder;
 }
 .btn:hover{
     box-shadow: 10px 10px #436850;
 }
 .messages{
+    color: #436850;
+    font-size: 30px;
+    margin-right: 300px;   
+}
+#result{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:60px;
-    font-size: 40px;
-    color:  #436850;;
+    justify-content: space-around;
 }
 .scores{
+    margin-top: 20px;
     display: flex;
-    gap :50px;
+    flex-direction: column;
+    gap :10px;
+    align-items: center;
+    width: 400px;
+    height: 100px;
 }
 
 .footer{
@@ -66,6 +85,10 @@ body{
     margin-top: auto;
     width: 100%;
     
+}
+.score{
+    display: flex;
+    gap:150px;
 }
 
 
