@@ -4,6 +4,9 @@ const scissorsBtn = document.querySelector('#scissors');
 const scoreText = document.querySelector('#YOU');
 const scoreTextCpu = document.querySelector('#CPU')
 const messageText = document.querySelector('#message');
+const playerChoiceIcon = document.querySelector('#playerChoice');
+const cpuChoiceIcon = document.querySelector('#cpuChoice');
+
 
 const buttons = [rockBtn, paperBtn, scissorsBtn]
 let playerInput = '';
@@ -33,37 +36,61 @@ function playRound(playerInput){
     }
 
     if(playerInput == 'rock' && cpuInStr == 'Paper'){
-        messageText.textContent = 'CPU chooses ' + cpuInStr + ': You lose.';
+        messageText.textContent = 'You lose 😹';
         scoreCPU++;
         scoreTextCpu.textContent = 'CPU: ' + scoreCPU;
+        playerChoiceIcon.textContent = '✊🏻';
+        cpuChoiceIcon.textContent = '✋🏾';
     }
     else if(playerInput == 'rock' && cpuInStr == 'Scissors'){
-        messageText.textContent = 'CPU chooses ' + cpuInStr + ': You Win.';
+        messageText.textContent = 'You Win 🎉';
         scoreYOU++;
         scoreText.textContent = 'YOU: ' + scoreYOU;
+        playerChoiceIcon.textContent = '✊🏻';
+        cpuChoiceIcon.textContent = '✌🏾';
     }
     else if(playerInput == 'paper' && cpuInStr == 'Rock'){
-        messageText.textContent = 'CPU chooses ' + cpuInStr + ': You Win.';
+        messageText.textContent = 'You Win 🎉';
         scoreYOU++;
         scoreText.textContent = 'YOU: ' + scoreYOU;
+        playerChoiceIcon.textContent = '✋🏻';
+        cpuChoiceIcon.textContent = '✊🏾';
     }
     else if(playerInput == 'paper' && cpuInStr == 'Scissor'){
-        messageText.textContent = 'CPU chooses ' + cpuInStr + ': You Lose.';
+        messageText.textContent = 'You Lose 😹';
         scoreCPU++;
         scoreTextCpu.textContent = 'CPU: ' + scoreCPU;
+        playerChoiceIcon.textContent = '✋🏻';
+        cpuChoiceIcon.textContent = '✌🏾';
     }
     else if(playerInput == 'scissors' && cpuInStr == 'Rock'){
-        messageText.textContent = 'CPU chooses ' + cpuInStr + ': You Lose.';
+        messageText.textContent = 'You Lose 😹';
         scoreCPU++;
         scoreTextCpu.textContent = 'CPU: ' + scoreCPU;
+        playerChoiceIcon.textContent = '✌🏻';
+        cpuChoiceIcon.textContent = '✊🏾';
     }
     else if(playerInput == 'scissors' && cpuInStr == 'Paper'){
-        messageText.textContent = 'CPU chooses ' + cpuInStr + ': You Win.';
+        messageText.textContent = 'You Win 🎉';
         scoreYOU++;
         scoreText.textContent = 'YOU: ' + scoreYOU;
+        playerChoiceIcon.textContent = '✌🏻';
+        cpuChoiceIcon.textContent = '✋🏾';
     }
     else{
-        messageText.textContent = 'CPU chooses ' + cpuInStr + ': Its a draw.';
+        messageText.textContent = 'Its a draw 🫱🏻‍🫲🏽';
+        if(playerInput == 'rock'){
+            playerChoiceIcon.textContent = '✊🏻';
+            cpuChoiceIcon.textContent = '✊🏾';
+        }
+        else if(playerInput == 'paper'){
+            playerChoiceIcon.textContent = '✋🏻';
+            cpuChoiceIcon.textContent = '✋🏾';
+        }
+        else if(playerInput == 'scissors'){
+            playerChoiceIcon.textContent = '✌🏻';
+            cpuChoiceIcon.textContent = '✌🏾';
+        }
     }
    
 }
